@@ -75,9 +75,448 @@
 </nav>
   
 <!--Site content-->
-<a class="theme-switch" onclick="toggleTheme()">
+<!-- <a class="theme-switch" onclick="toggleTheme()">
     <p id="theme">🌙</p>
-</a>
+</a> -->
+<div class="jumbotron">
+<div class="container"> </br>
+    <div class="row justify-content-center">
+
+        <div class="col-sm-10" style="color:SeaShell">
+        </br>
+
+          <h2>CSCI3130: Assembly and Computer Organization</h2>
+        </br>
+        </div>
+      </br>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="content"></br>
+  <!-- <h1>Announcements</h1>
+  <div class="list-group">
+  <a class ="list-group-item" href="https://mtmailmtsu-my.sharepoint.com/:x:/g/personal/asainju_mtsu_edu/EbeHb23-mb1GhGzvqdwfSd0B0lqay04Waq-XNdrvT6x_dA?e=pEyMS9">RSC Final Project Demo Sign-up Sheet. Please select one timeslot.</a>
+</div> -->
+<br/>
+  <span class="anchor" id="schedule"></span>
+<h1>Schedule</h1>
+<p>Lectures: Tuesdays and Thrusdays: 02:40 PM - 4:05 PM, KOM 320 </p>
+<p>Labs: Fridays: 11:30 AM – 1:30 PM KOM 350/360</p>
+<table class="table  table-sm table-hover">
+<thead>
+<tr>
+  <th scope="col">Lecture/Lab</th>
+  <th scope="col">Date</th>
+  <th scope="col">Topic</th>
+  <th scope="col">Slide</th>
+</tr>
+</thead>
+<tbody>
+
+<tr style="border-top:2px solid black">
+  <td>Lecture 1</td>
+  <td>01-17</td>
+  <td>Syllabus, Introduction to x86_64 Assembly: gas, system calls, functions (x86_64 Reference)</td>
+  <td>
+ <!-- <a href="https://mtmailmtsu-my.sharepoint.com/:p:/g/personal/asainju_mtsu_edu/EY_uv1UZopVKs3zSY5N5iHwBaj8xUKv7VgehDQ31DbM-8A?e=pLG1rh">[Lecture 1 PPTX]</a> -->
+ <a href="Lecture1_Intro_to_x86_64.pptx">[Lecture 1 PPTX]</a>
+
+  </td>
+</tr>
+<tr>
+  <td>Lecture 2</td>
+  <td>01-19</td>
+  <td>C-library Interfacing, Static Memory Allocation </td>
+  <td>
+    <!-- <a href="https://mtmailmtsu-my.sharepoint.com/:p:/g/personal/asainju_mtsu_edu/EVq1RVe4FPJEnP2O8KMOwTkBN29x5Mve-ZMSi8eHx7xgiA?e=f98Qf9">[Lecture 2 PPTX]</a> -->
+    <a href="Lecture2_C_library_Interfacing_and_Allocation.pptx">[Lecture 2 PPTX]</a>
+
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-success">
+  <td>No Lab</td>
+  <td>01-20</td>
+  <td>Cancelled</td>
+  <td>
+
+  </td>
+</tr>
+<tr >
+  <td>Lecture 3</td>
+  <td>01-24</td>
+  <td>Loops, Arithmetic/Logic Ops, Control Ops, Functions</td>
+  <td>
+<a href="Lecture3_Arithmetic_Logic_Functions_Loops_Formats.pptx">[Lecture 3 PPTX]</a>
+  </td>
+</tr>
+<tr >
+  <td>Lecture 4</td>
+  <td>01-26</td>
+  <td>Binary/Octal/Hexadecimal Signed Integer </td>
+  <td>
+<a href= "Lecture4_Formats_Translation.pptx">[Lecture 4 PPTX]</a>
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-success">
+  <td>No Lab</td>
+  <td>01-27</td>
+  <td>Cancelled</td>
+  <td>
+
+  </td>
+</tr>
+<tr >
+  <td>Lecture 5</td>
+  <td>01-31</td>
+  <td>Encoding and Translation, Boolen Algebra</td>
+  <td>
+<a href="Lecture5_6_ComputerOrganization_BooleanAlgebra_CombinationCircuits.pptx">[Lecture 5 and 6 PPTX]</a>
+  </td>
+</tr>
+<tr >
+  <td>Lecture 6</td>
+  <td>02-02</td>
+  <td>Logic Diagrams, Boolean Expressions, Combinational Circuits</td>
+  <td>
+<!-- <a href="private/Lecture6_Boolean_Algebra_Digital_Logic.pptx">[Lecture 6 PPTX]</a> -->
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>02-03</td>
+  <td>Closed Lab 0 - Lab Conventions & Logisim Overview. <br/> Closed Lab 1 - Algebric Expression</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+<tr >
+  <td>Lecture 7</td>
+  <td>02-07</td>
+  <td>Simplifying Boolen Expessions, Karnaugh Maps (K-Maps,2-3 vars)</td>
+  <td>
+<a href="Lecture7_Kmaps.pptx">[Lecture 7 PPTX]</a>
+  </td>
+</tr>
+<tr>
+  <td>Lecture 8</td>
+  <td>02-09</td>
+  <td>4-var K-maps</td>
+  <td>
+<a href="Lecture8_Kmaps_part2.pptx">[Lecture 8 PPTX]</a>
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+<td>02-10</td>
+  <td>Closed Lab 2 - Parity Generator and Checker</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-warning">
+  <td>Exam</td>
+  <td>02-14</td>
+  <td>Exam 1</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+<tr >
+  <td>Lecture 9</td>
+  <td>02-16</td>
+  <td>Multiplexer, DeMultiplexer, Decoder, Encoder</td>
+  <td>
+    <a href="Lecture9_10_Complex_Combinational_Circuits.pptx">[Lecture 9-10 PPTX]</a>
+
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>02-17</td>
+  <td>Closed Lab 3 - 7-seg Display</td>
+  <td>
+
+  </td>
+</tr>
+<tr >
+  <td>Lecture 10</td>
+  <td>02-21</td>
+  <td>Complex Combinational Circuits, Half-adder, Full-Adder, Shifter, Comparator</td>
+  <td>
+<!-- <a href="private/Lecture9_10_Complex_Combinational_Circuits.pptx">[Lecture 9-10 PPTX]</a> -->
+  </td>
+</tr>
+<tr >
+  <td>Lecture 11</td>
+  <td>02-23</td>
+  <td>RSC Intro, ALU, Sequential Circuits</td>
+  <td>
+<a href="Lecture11_12_Sequential_Circuits.pptx">[Lecture 11-12 PPTX]</a>
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>02-24</td>
+  <td>Closed Lab 4 - Arithmetic Unit</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+<tr >
+  <td>Lecture 12</td>
+  <td>02-28</td>
+  <td>Basic Sequential Circuits (Flip-flops), Characteristic & Excitation Tables, Counters, Registers</td>
+  <td>
+<!-- <a href="private/Lecture11_12_Sequential_Circuits.pptx">[Lecture 11-12 PPTX]</a> -->
+  </td>
+</tr>
+<tr >
+  <td>Lecture 13</td>
+  <td>03-02</td>
+  <td>Buses, Bus w/MUX+TSBuffer</td>
+  <td>
+  <a href="Lecture13_Buses.pptx">[Lecture 13 PPTX]</a>
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>03-03</td>
+  <td>Closed Lab 5 - Logic Unit (Lu) & ALU</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-primary">
+  <td>No Lecture</td>
+  <td>03-07</td>
+  <td>No class (Spring Break)</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-primary">
+  <td>No Lecture</td>
+  <td>03-09</td>
+  <td>No class (Spring Break)</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+<tr >
+  <td>Lecture 14</td>
+  <td>03-14</td>
+  <td>Intro to RSC</td>
+  <td>
+<a href="Lecture14_15_16_RSC.pptx">[Lecture 14-15-16 PPTX]</a>
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-warning">
+  <td>Exam</td>
+  <td>03-16</td>
+  <td>Exam 2</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>03-17</td>
+  <td>Review CLA4 and CLA5</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+
+<tr >
+  <td>Lecture 15</td>
+  <td>03-21</td>
+  <td>Intro to RSC</td>
+  <td>
+    <!-- <a href="private/Lecture14_15_16_RSC.pptx">[Lecture 14-15-16 PPTX]</a> -->
+  </td>
+</tr>
+
+<tr >
+  <td>Lecture 16</td>
+  <td>03-23</td>
+    <td>RSC Register, Ins. Sets, Register Transfer Language, RSC Microcode</td>
+
+  <td>
+      <!-- <a href="private/Lecture14_15_16_RSC.pptx">[Lecture 14-15-16 PPTX]</a> -->
+
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>03-24</td>
+  <td>Closed Lab 6 -  D&T Control Circuits</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+
+
+
+<tr style="border-top:2px solid black" class="table-primary">
+  <td>Lecture 17</td>
+  <td>03-28</td>
+  <td>Cancelled</td>
+  <td>
+    <!-- <a href="private/Lecture17_Memory_Organization.pptx">[Lecture 17 PPTX]</a>
+     <a href="private/memory.circ">[Logisim]</a> -->
+  </td>
+</tr>
+
+<tr >
+  <td>Lecture 17-18</td>
+  <td>03-30</td>
+  <td>Memory Organization Cache Memory- part 1</td>
+  <td>
+ <!-- <a href="private/Lecture18_19_Cache_Memory.pptx">[Lecture 18-19 PPTX]</a> -->
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>03-31</td>
+  <td>Closed Lab 7 -PLDs- part I</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+<tr>
+  <td>Lecture 19</td>
+  <td>04-04</td>
+  <td>Cache Memory- part 2</td>
+  <td>
+ <!-- <a href="private/Lecture18_19_Cache_Memory.pptx">[Lecture 18-19 PPTX]</a> -->
+  </td>
+</tr>
+
+<tr >
+  <td>Lecture 20</td>
+  <td>04-06</td>
+  <td>Virtual Memory</td>
+  <td>
+<!-- <a href="private/Lecture20_Virtual_Memory.pptx">[Lecture 20  and 21 PPTX]</a> -->
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>04-07</td>
+  <td>Closed Lab 7 -  PLDs- part II</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+
+
+<tr >
+  <td>Lecture 21</td>
+  <td>04-11</td>
+  <td>Virtual Memory, RSC Emulator Demo, Lab Procedures for Final Project</td>
+  <td>
+<!-- <a href="private/Lecture21_Integer_Multiplication.pptx">[Lecture 21 PPTX]</a> -->
+  </td>
+</tr>
+
+<tr >
+  <td>Lecture 22</td>
+  <td>04-13</td>
+  <td>Alternative Architectures</td>
+  <td>
+<!-- <a href="private/Lecture22_AlternativeArchitecture.pptx">[Lecture 22 PPTX]</a> -->
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>04-14</td>
+  <td>TBD</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+
+
+
+<tr style="border-top:2px solid black" class="table-warning">
+  <td>Exam</td>
+  <td>04-18</td>
+  <td>Exam 3</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-primary">
+  <td>Lecture 23</td>
+  <td>04-20</td>
+  <td>Final Exam Review</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-success">
+  <td>Lab</td>
+  <td>04-21</td>
+  <td>TBD</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-primary">
+  <td>Lecture 24</td>
+  <td>04-25</td>
+  <td>TBD</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+
+
+<tr style="border-top:2px solid black" class="table-primary">
+  <td>No Lecture</td>
+  <td>04-27</td>
+  <td>Last day of classes</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+
+<tr style="border-top:2px solid black" class="table-warning">
+  <td>RSC Demo</td>
+  <td>04-28</td>
+  <td>RSC Final Project Demo.  </td>
+  <td>
+     <!-- <a class ="list-group-item" href="https://mtmailmtsu-my.sharepoint.com/:x:/g/personal/asainju_mtsu_edu/EbeHb23-mb1GhGzvqdwfSd0B0lqay04Waq-XNdrvT6x_dA?e=pEyMS9">Sign-up Sheet. </a> -->
+  </td>
+</tr>
+<tr style="border-top:2px solid black" class="table-warning">
+  <td>Final Exam</td>
+  <td>05-02</td>
+  <td>Final Exam (3:30 PM to 5:30 PM)</td>
+  <td>
+<!-- <a href="private/08-24_Introduction_to_x86_64_Assembly.pptx">[PPTX]</a> -->
+  </td>
+</tr>
+</tbody>
+</table>
+<br/>
+</div>
 
 </body>
 </html>
