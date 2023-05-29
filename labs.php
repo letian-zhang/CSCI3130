@@ -1,1 +1,186 @@
+<?php include("header.php"); ?>
+<script>$modtime = "<?php echo date('F d Y H:i:s',filemtime(__FILE__)); ?>"</script>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php">CSCI3130</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">Course Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="index.php">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="syllabus.php">Syllabus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="assignments.php">Assignments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="materials.php">Materials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  aria-current="page" href="labs.php">Labs</a>
+        </li>
+
+
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+<div class="container"> </br>
+    <div class="row justify-content-center">
+
+        <div class="col-sm-6" style="color:SeaShell">
+        </br>
+
+          <h2>Lab Syllabus - CSCI 3130</h2>
+        </br>
+        </div>
+      </br>
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="content">
+<span class="anchor" id="instructor"></span>
+<h1>Instructor Information</h1>
+<b>LAB ASSISTANT(s):</b> Ian Hurd - <a href="mailto:inh2d@mtmail.mtsu.edu">inh2d@mtmail.mtsu.edu</a> and Revanth Kumar - <a href="mailto:rk4y@mtmail.mtsu.edu">rk4y@mtmail.mtsu.edu</a>
+<br/>
+<!-- <b>OFFICE:</b> Zoom-only <br/>
+<b>OFFICE HOURS:</b> By appointment only via Zoom this semester<br/> -->
+<b>LAB HOURS:</b> Fridays, 11:30 AM &ndash; 1:30 PM KOM 350/360 <br/>
+<!-- <a href="private/zoom.php" class="btn btn-primary">Click Here for Zoom Info</a><br/> -->
+<b>LAB WEB SITE:</b> <a href="https://www.cs.mtsu.edu/~asainju/Courses/CSCI3130/lab/">https://www.cs.mtsu.edu/~asainju/Courses/CSCI3130/lab/</a><br/>
+<br/>
+
+<span class="anchor" id="course"></span>
+<h1>Lab Information</h1>
+<h2>Summary</h2>
+This class will use two different types of labs: Open and Closed. During the lecture portion of this class, you will learn the basics of computer architecture
+theory and design. In lab, you will demonstrate knowledge and gain experience in the actual development of a relatively simple computer (RSC) architecture.
+Using the software package Logisim-evolution, you will design, construct, and demonstrate circuits throughout the semester.
+There will normally be a Closed Lab each week which will be performed within the computer lab and under strict time limits.
+Open Labs will be assigned during this time as well and should be constructed/completed outside of lab time during the following week.<br/><br/>
+
+<h2>Class Flow</h2>
+You will be introduced to the theory needed to perform Open/Closed Lab projects usually during the preceding lecture time.
+Your lab assistant will introduce Open/Closed Lab projects and make initial, very important announcements at the beginning of the lab session.
+Therefore, make sure that your attendance for the lab is prompt. The lab assistant will normally have your previous lab graded by the next lab period.
+After graded labs are returned, the lab assistant will be available for questions regarding the current assignment.
+PLEASE ASK QUESTIONS IF YOU HAVE THEM! <i>The lab assistant cannot know if there is an issue with the lab unless s/he receives questions regarding that issue.
+</i> The lab assistant can answer questions pertaining to the use of the software and the theory behind the lab.
+ <i>THE LAB ASSISTANT WILL NOT GIVE DIRECT ANSWERS TO THE LABS</i>.<br/>
+Some labs, both Open and Closed, are accessory labs that cover an important component of theory, but the LARGE MAJORITY of the labs depend
+on each other and are pieces for the FINAL PROJECT (RSC). The FINAL PROJECT will require you to construct the computer that you have designed and
+built throughout the semester. Therefore, it is of UTMOST IMPORTANCE that you complete each lab and do each lab correctly.<br/><br/>
+
+<h2>Lab Submissions</h2>
+All lab assignments should be submitted to the coursework website in D2L, as described in the class sylabus.
+ <!-- If a lab assignment is submitted multiple times, <i>the lab with the most recent submission date will be graded</i>.  -->
+ Closed Labs are due by the end of the closed lab session for that day. Open Labs are due by the date and time given for that particular lab assignment
+ (typically, by the end of the closed lab for the following week). All submissions are to be zipped (.zip file archive).
+ <!-- The zip file is to be named <span style="font-weight: bold;">FirstnameLastname_LabID.zip</span>.
+ (ex: IvanSyzonenko_OLA5.zip for open lab 5 - IvanSyzonenko_CLA5.zip for closed lab 5) --><br/>
+Label <b>all</b> of your circuits <b>and</b> any associated files in the upper left corner with:<br /><br/>
+<span style="font-family: courier new,courier;">Your Name</span><br style="font-family: courier new,courier;" />
+<span style="font-family: courier new,courier;">Lab #</span><br style="font-family: courier new,courier;" />
+ <span style="font-family: courier new,courier;">Circuit Name </span><br/><br/>
+
+<h2>Late Lab Submissions</h2>
+Labs, both Open and Closed, will not be accepted late (but please refer to the lab resubmission policy below).
+All assignments are due on the date that is specifically set. Extensions will only be given for extenuating circumstances and only with
+<i>prior approval</i> of the lab assistant or Dr. Sainju.<br/><br/>
+
+<h2>Attendance</h2>
+ Attendance of Closed Lab is <u>mandatory</u>. <br/>
+ Non-attendance of a lab will result in a grade of 0 unless special arrangements have been made prior to the lab.
+ Most of the labs are related to building the RSC, therefore any student who misses a lab, with or without prior approval,
+ must make up the work in order to finish the final project.
+  <!-- The labs are changed on occasion as minor corrections or adjustments are made. Therefore, having taken CSCI 3130 in a prior semester does not relieve students from attending lab. Tardiness may result in a reduced grade for the closed lab. -->
+<br/>
+<br/>
+
+<span class="anchor" id="grading"></span>
+<h1>Performance Evaluation</h1>
+There will be approximately 7 Closed Lab assignments, 6 Open Lab assignments, and a Final Project (RSC).
+The following explains how much each lab assignment is worth:<br/>
+<table class="table">
+<thead>
+<tr>
+  <th scope="col">Closed Labs</td>
+  <th scope="col">Open Labs</td>
+  <th scope="col">Final Project (RSC)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>10 points each</td>
+  <td>20 points each</td>
+  <td>100 points</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Grading Principles</h2>
+All labs will be graded on correctness and adherence to the lab specifications below. Closed Lab assignments are due by the end of the assigned lab session,
+and Open Lab assignments are due by the end of the subsequent lab session (unless the lab specifically states otherwise).
+ <b>Late work will NOT be accepted unless explicit permissions have been given to you by the lab assistant and Dr. Sainju.</b>
+ However, all labs should be (re)submitted to determine correctness since the FINAL PROJECT requires that all previous labs have been completed.<br/>
+
+<ol>
+<li>Grades for lab assignments will be recorded on D2L, and feedback on lab assignments will be provided via the D2L assignment submission system.
+  Students should always check grades and download relevant feedback from the assignment submission system <b>before</b> lab time.
+  If no errors were found with the circuit(s), you will receive simple feedback indicating the circuit tested properly and a final grade.
+ Additionally, a grade of zero (0) will be assigned until all errors are corrected so that a final point value can be determined (see item 2 below).</li>
+<li>The labs, both Open and Closed, differ significantly from the labs of other classes. Unlike most other classes, the Open and Closed labs in 3130,
+  excluding a few, build upon one another to produce the Relatively Simple Computer (RSC). Therefore, it is critical that any and all errors be corrected for
+  these assignments. If a submitted lab assignment is found to contain any errors during grading, then <i>until all errors are corrected</i>
+   the recorded grade for the lab will remain a zero (0). All such labs will need to be corrected and resubmitted in a timely manner if errors are
+   found during grading. Following grading of labs, the course submission system allows for resubmissions before the end of the subsequent lab session.</li>
+<li>Labs submitted by their initial deadlines and containing no errors will receive 100% credit.
+  Max credit you can receive is 90% for the first resubmission (within 1 week of the initial deadline), and 80% for the second resubmission
+   (within 2 weeks of the initial deadline).
+    Therefore, <i>a potential maximum of two resubmissions are allowed.</i>
+    After this time, a grade of zero will be given. Additionally, no resubmissions will be accepted after Study Day (the last day before final exams). </li>
+<li>Assignments are broken up into sections depending on the amount of effort required to complete the assignment. Remember, regardless of error severity,
+  incorrect lab submissions will be returned with a grade of zero (see item 2 above). Penalties for incorrect lab submissions will normally be determined as follows:
+<ul>
+  <li>-10% Minor issues: simple errors and quick fixes that need attention</li>
+  <li>-20% Medium issues: file naming and sub-directory issues, well hidden crossed wire, missing inputs/outputs, etc.</li>
+  <li>-30% Major theory malpractice: bit-width mismatches (8 bits become 12 bits), incorrect part use, very poor design and mass deviation from instructions</li>
+  <li>-50% Critical negligence: plainly obvious errors, mass wire crossing, anything that should have been obvious with quick error checking</li>
+</ul>
+</li>
+<li>Since most labs are related to the RSC, all students must correct errors on lab assignments in order to complete the final project (see item 2 above).
+<b>NOTE: </b>Failure to correct errors in previous labs WILL have a direct impact on the final project. <b>Assistance on the final project may be withheld until
+all previous labs are corrected. </b></li>
+<li>All lab grades will be recorded on D2L (https://elearn.mtsu.edu).</li>
+<li>Because the FINAL PROJECT requires the completion of all previous labs, it is strongly suggested that you maintain back-up copies of all of your work,
+  preferably on a network/cloud drive.</li>
+  <li>Please email Dr. Sainju (arpan.sainju@mtsu.edu) by January 24 at midnight with the subject "Spring 2023 CSCI3130 Extra Credit" acknowledging that you have read all the content of the syllabus to receive 5 points extra credit on your first exam.</li>
+</ol>
+
+<span class="anchor" id="policies"></span>
+<h1>Course Policies</h1>
+The CSCI 3130 Labs will adhere to all course policies as specified in:<br/>
+<a href="syllabus.php" class="btn btn-primary">CSCI 3130 Class Syllabus (click here)</a>
+<br/><br/>
+<!-- Note: This syllabus is tentative and is subject to change.<br/> -->
+</div>
+<?php include("footer.php"); ?>
 
