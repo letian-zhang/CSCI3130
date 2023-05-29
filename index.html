@@ -16,88 +16,56 @@
     <script src="js/index.js" defer></script>
 </head>
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">CSCI3130</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-Label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Course Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active"  aria-current="page" href="index.html">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="syllabus.html">Syllabus</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link "  aria-current="page" href="assignments.html">Assignments</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link "  aria-current="page" href="materials.html">Materials</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link "  aria-current="page" href="labs.html">Labs</a>
-        </li>
-
-
-        <!-- <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li> -->
-      </ul>
-      <!-- <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-Label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
     </div>
-  </div>
-</nav>    
+
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<h1> CPD 2023 </h1>
+                    <!--h1> CPD 2023 <img src="/img/Earth-NASA.jpg" alt=""/></h1-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#section-intro">About</a></li>
+                        <li><a class="page-scroll" href="#section-cfp">Call for Paper</a></li>
+                        <li><a class="page-scroll" href="#section-speaker">Organizer</a></li>
+                        <li><a class="page-scroll" href="#section-ajenda">Agenda</a></li>
+                        <!-- <li><a class="page-scroll" href="#section-partner">Partners</a></li> -->
+                        <li><a class="page-scroll" href="#section-venue">Venue</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- .nav -->
+
+    </header>   
     
-<body>
 <!--Site content-->
 <a class="theme-switch" onclick="toggleTheme()">
     <p id="theme">🌙</p>
 </a>
-<h1 class="title">John Doe</h1>
-<div class="container">
-    <div class="profile">
-        <img src="img/profile.png" alt="Profile picture" style="width: 150px; height: 150px; border-radius: 100px;">
-        <h2>Profile</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quae.</p>
-    </div>
-    <br>
-    <h2>Experience</h2>
-    <ul>
-        <li>Company 1</li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quae.</p>
-        <li>Company 2</li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quae.</p>
-        <li>Company 3</li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quae.</p>
-    </ul>
-    <br>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-    </ul>
-    <br>
-    <h2>Contact</h2>
-    <ul>
-        <li>John Doe</li>
-        <li>
-            <a href="mailto:">Email</a>
-        </li>
-        <li>
-            <a href="tel:">Phone</a>
-        </li>
-    </ul>
-</div>
+
 </body>
 </html>
