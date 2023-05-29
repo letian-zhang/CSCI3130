@@ -1,1 +1,347 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--     <link rel="stylesheet" href="css/style.css"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <style>
+   .jumbotron{
+    background-image: url('./img/bannerblack.jpg');
+    background-size: cover;
+    height: 100%;}
+    </style>
+    <title>CSCI3130</title>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
 
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">CSCI3130</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-Label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Course Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  aria-current="page" href="index.html">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="syllabus.html">Syllabus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="assignments.html">Assignments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="materials.html">Materials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="labs.html">Labs</a>
+        </li>
+
+
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-Label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+  
+<!--Site content-->
+<!-- <a class="theme-switch" onclick="toggleTheme()">
+    <p id="theme">🌙</p>
+</a> -->
+<div class="jumbotron">
+<div class="container"> </br>
+    <div class="row justify-content-center">
+
+        <div class="col-sm-10" style="color:SeaShell">
+        </br>
+
+          <h2>CSCI3130: Assembly and Computer Organization</h2>
+        </br>
+        </div>
+      </br>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="content"></br>
+  <span class="anchor" id="instructor"></span>
+  <h2>Instructor Information</h2>
+  Dr. Letian Zhang<br/>
+  Assistant Professor<br/>
+  Department of Computer Science <br/>
+  Middle Tennessee State University <br/>
+  Office: KOM 354 <br/>
+  Phone: (615) 898-2801<br/>
+  Email: <a href="mailto:letian.zhang@mtsu.edu">arpan.sainju@mtsu.edu</a><br/>
+  Website: <a href="https://letian-zhang.github.io/">https://letian-zhang.github.io/</a><br/>
+  <br/>
+
+  <span class="anchor" id="officehours"></span>
+  <h2>Office Hours</h2>
+  </br>
+  Tuesdays: 10:35 AM - 11:35 AM  &amp 4:05 PM - 5:05 PM</br>
+  Thrusdays: 10:35 AM - 11:35 AM &amp 4:05 PM - 5:05 PM</br>
+  <br/>
+  <br/>
+
+  <span class="anchor" id="course"></span>
+  <h2>Course Information</h2>
+  Lectures: Tuesdays &amp; Thrusdays:  02:40 PM -  4:05 PM, KOM 320
+  <br/>
+  <br/>
+  <h2>Lab</h2>
+  Fridays: 11:30 AM -  1:30 PM, KOM 350/360<br/></br>
+<!--
+  <h2>Lab Syllabus:</h2> -->
+  <a href="labs.html" class="btn btn-primary">Click Here for CSCI 3130 Lab Syllabus</a><br/>
+  <br/>
+
+  <h2>Graduate Teaching Assistants:</h2>
+   Ian Hurd  (<a href="mailto:inh2d@mtmail.mtsu.edu"> inh2d@mtmail.mtsu.edu</a>)<br/>
+   Revanth Kumar   (<a href="mailto:rk4y@mtmail.mtsu.edu"> rk4y@mtmail.mtsu.edu</a>)<br/>
+</br>
+
+  <h2>Textbook</h2>
+  <a href="https://www.jblearning.com/catalog/productdetails/9781284123036">Essentials of Computer Organization and Architecture, 3rd, 4th, or 5th Edition</a> by Linda Null and Julia Lobur<br/>
+  <!-- ISBN-10: 013284737X<br/> -->
+  ISBN: 9781284123036<br/>
+  <br/>
+  <h2>Course Description</h2>
+  Topics include introductory assembly language programming, hardware components of digital computers, microprogramming, and memory management. Laboratory exercises involve the development of assembly language codes, logical and functional properties of components from gates to microprocessors. Basic computer architecture, organization, and function of simple computer systems are presented.<br/>
+  <h6>Pre-requisite: A grade of "C" or higher in CSCI 2170 is necessary to take this course.</h6>
+  <br/>
+
+  <h2>Learning Outcomes</h2>
+  Upon successful completion of this course, a student will be able to:<br/>
+  <ul>
+    <li>Write assembly language programs using Intel x86-64 and other instruction sets</li>
+    <li>Design and implement various combinatorial and sequential circuits</li>
+    <li>Understand basic computer organization concepts (CPU design and organization) </li>
+    <!-- <li>Understand both hardware and micro-programmed design control units</li> -->
+    <li>Understand the concepts involved in the memory hierarchy of a computer</li>
+  </ul>
+
+  <h2>Topics Covered</h2>
+  <ul>
+    <li>Introduction to x86_64 Assembly: gas, system calls, functions (x86_64 Reference)</li>
+    <li>C-library Interfacing and Static Memory Allocation (x86_64,C Reference)</li>
+    <li>Loops, Arithmetic/Logic Ops, Control Ops (x86_64 Reference)</li>
+    <li>Binary/Octal/Hexadecimal, Signed Integers, IEEE Floating Point, Assembly Translation (Ch.2, x86_64 Reference)</li>
+    <li>Computing Fundamentals, Truth Tables, Logic Diagrams, Boolean Expressions, Combinational Circuits (Ch. 3)</li>
+    <li>Simplifying Boolean Expressions, Karnaugh Maps (K-maps, 2-3 variables) (Ch. 3)</li>
+    <li>K-maps (4+ variables), Sum of Products. Product of Sums, Sufficiency Gates (Ch. 3)</li>
+    <li>Complex Combinational Circuits, Half-adder, Full-adder, 3-bit Adder, Shifter, Comparator (Ch. 3)</li>
+    <li>Multiplexer, Decoder, Encoder, RSC Intro, 3-bit ALU (Ch. 3)</li>
+    <li>Basic Sequential Circuits (Flip-flops), Characteristic & Excitation Tables (Ch. 3)</li>
+    <li>Designing Sequential Circuits, Registers, Counters (Ch. 3)</li>
+    <li>Buses, Bus w/MUX+TSBuffer (Ch. 4)</li>
+    <li>Memory Organization (Ch. 6)</li>
+    <li>Introduction to Comp. Org., RSC Registers & Instruction Set</li>
+    <li>Register Transfer Language, RSC Microcode, Purpose of the SC (Ch. 6)</li>
+    <li>Cache Memory (Ch. 6)</li>
+    <li>Virtual Memory (Ch. 6)</li>
+    <!-- <li>Multiplication Algorithms (Ch. 2)</li> -->
+  </ul>
+
+  <h2>Final Exam</h2>
+  Tuesday, May 2nd, 2022, 03:30 PM - 5:30 PM<br/>
+  <br/>
+
+  <!-- <h2>Website</h2>
+  The course website is at <a href="http://www.cs.mtsu.edu/~asainju/courses/CSCI3130/">http://www.cs.mtsu.edu/~asainju/courses/CSCI3130/</a>.
+  Announcements and assignments will be posted there and/or emailed to your Pipeline email address.  You are expected to monitor the website and your email account frequently (i.e., at least once a day, Monday through Friday).
+  <br/>
+  <br/> -->
+  <!-- <h2>Email</h2>
+  You must be able to read and respond to e-mails sent to your university Pipeline account. If you'd rather not use MTMail as your primary e-mail system, Dr. Untch put together a tutorial for redirecting your MTMail e-mail to a system you prefer:  <a href="https://www.cs.mtsu.edu/~untch/share/HowToAvoidUsingMTMail.pdf">https://www.cs.mtsu.edu/~untch/share/HowToAvoidUsingMTMail.pdf</a>.
+  <br/>
+  <br/> -->
+
+  <h2>Lecture</h2>
+  Attendance is required by the university and faculty are required to report attendance for each course each semester. <!-- As a <b>web-assisted</b> course set up to practice <b>social distancing</b> due to COVID-19, each student will be assigned to one of two lecture days (Monday OR Wednesday) and <i>students should only attend lecture on-groud during your <b>assigned day</b> and in your <b>assigned seat</b></i>. A Zoom meeting session will be active during the scheduled lecture time for all students in the course to attend when not currently on-ground.</b> -->
+  <!-- As a <b>remote</b> course set up to practice <b>social distancing</b> due to COVID-19, <b>students will not attend <i>on-ground</i> lecture or lab</b>. Instead, a Zoom meeting session will be active during the scheduled lecture time for all students in the course to attend.</b><br/>
+  If you cannot make a lecture, please inform me and get the relevant materials from a classmate.<br/> -->
+  <!-- Computers are permitted in lecture for note taking.  Other activities such as web surfing, stock trading, and social networking are inappropriate.  Not only do they distract you but also others.<br/> -->
+  <!--Students that do not attend the first 2 lectures may be dropped from the course.<br/>-->
+  <!-- An audible cell phone ring during class will require the possessor to bring cookies (or equivalent) for the entire class at the following lecture.<br/> -->
+  <!--
+  Additionally, all views are to be heard and engaged respectively.  As scholars, we are expected to analyze subject matter critically and express reasonable positions that are based on facts, reason, and balanced emotion.   -->
+  <br/><br/>
+
+  <h2>Submitting Assignments</h2>
+All assignments must be uploaded to <a href="https://elearn.mtsu.edu/">D2L</a> for grading.
+  All assignments submitted using any other method <b>will be ignored. (no email, no hardcopies, no etc.)</b>.<br/>
+  <br/>
+
+  <h2>Homework/Quizzes</h2>
+  Homework assignments/Quizzes are due at 5:30 PM on the assigned due date unless specified otherwise.<br/>
+  Homework assignments/Quizzes may be turned in late at a penalty of 10% for the first day late, 20% for the second, and will not be accepted after the second day late.
+  <!-- <b>Late homework assignments will NOT be graded.</b> -->
+  <br/>
+  <br/>
+  <h2>Labs</h2>
+   The first two open lab assignments may be turned in late at a penalty of 10% for the first day late, 20% for the second, and will not be accepted after the second day late.  <br/>
+  Policies regarding all other closed and open lab assignments are described in the <a href="labs.html">CSCI 3130 Lab Syllabus</a>.
+  <!-- <br/> -->
+  <!-- No assignments can be turned in after the last day of classes. -->
+  <br/>
+
+  <h2>Supplies</h2>
+  We will be using JupyterLab (an interactive IPython Notebook server) hosted on the AzureAD cluster to perform assembly language programming for the first quarter of the semester.
+   AzureAD will be accessible remotely from any computer with a web browser (suggested: Chrome or Firefox) at <a href="https://jupyterhub.cs.mtsu.edu/azuread/">https://jupyterhub.cs.mtsu.edu/azuread/</a>. If you access JupyterHub using a public computer, be sure to <b>log out</b> (not just close your browser) to protect your data.
+  We will be using Logisim-evolution (a hardware simulator program) in the lab. You will need an external
+  storage medium in order to retain assignments (e.g. A USB flash drive, Google Drive, or Dropbox are
+  options to consider.) You may also wish to use Logisim on your home computer once assignments are
+  given. Logisim-evolution is free and can be downloaded from <a href="https://github.com/logisim-evolution/logisim-evolution/">https://github.com/logisim-evolution/logisim-evolution/</a>.
+  <!-- If you do not have the ability or desire to download Logisim to your computer, you may 	access the software remotely via Remote Desktop to dozer.cs.mtsu.edu (use your CS account credentials).<br/> -->
+  <!-- You will need a desktop or laptop computer with a fully-functioning camera and microphone for all Zoom sessions and online examinations. -->
+  <br/><br/>
+
+  <span class="anchor" id="grading"></span>
+  <h1>Performance Evaluation</h1>
+  <table class="table">
+    <thead>
+      <th scope="col">Assignment Category</th>
+      <th scope="col">Percentage Credit</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Homework/Quizzes</td>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <td>Lab Assignments</td>
+        <td>40%</td>
+      </tr>
+      <tr>
+        <td>Exams</td>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <td>Final Exam</td>
+        <td>20%</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- You <b>MUST</b> have a passing test average and a passing lab average to receive a passing grade (C or better) in this course. There will be <b>no</b> exceptions. -->
+  <!-- <ul> -->
+  <!--   <li>Students with a test average that is below 70% will receive a grade no higher than C- in this course.</li> -->
+  <!--   <li>Students with a laboratory average that is below 70% will receive a grade no higher than C- in this course.</li> -->
+  <!-- </ul> -->
+  <br/>
+  <h2>Grading</h3>
+  The following grading scale will be used in this class:
+  <table class="table">
+    <thead>
+      <th scope="col">Plus</th>
+      <th scope="col">Grade</th>
+      <th scope="col">Minus</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>A<br/>90-100</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>B+<br/>87-89</td>
+        <td>B<br/>83-86</td>
+        <td>B-<br/>80-82</td>
+      </tr>
+      <tr>
+        <td>C+<br/>77-79</td>
+        <td>C<br/>73-76</td>
+        <td>C-<br/>70-72</td>
+      </tr>
+      <tr>
+        <td>D+<br/>67-69</td>
+        <td>D<br/>63-66</td>
+        <td>D-<br/>60-62</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>F<br/>&lt; 60</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  Grades for assignments, labs, exams, etc. will be posted in D2L within two weeks of the submission deadline.
+  Approximately 3 in-class exams will be given.
+  Each missed exam will be given zero points.
+  Students are expected to complete all projects and assignments.
+  Any questions concerning a grade on a homework/quizzes, lab, or exam must be presented within one week of when the item was returned.
+  <!-- <b>A final grade of "C-" (or below) will constitute an "NC" grade for the course.</b> -->
+  The last day to drop without a grade is <b>January 30, 2023</b> (11:59pm).
+  The last day to drop with a grade of "W" is <b>March 26, 2023</b> (11:59pm).<br/>
+  <!-- <a href="https://www.mtsu.edu/dates.php" class="btn btn-primary">Important Dates and Deadlines (click here)</a><br/> -->
+  <!-- Incomplete grades are given rarely and only in extenuating circumstances. Page 56 of the <a href="http://catalog.mtsu.edu/">MTSU Undergraduate Catalog</a> states: "The grade I indicates that the student has not completed all course requirements because of illness or other uncontrollable circumstances, especially those which occur toward the end of the term. Mere failure to make up work or turn in required work on time does not provide the basis for the grade of "I" unless extenuating circumstances noted above are present for reasons acceptable to the instructor." Please refer to the <a href="http://catalog.mtsu.edu/">Undergraduate Catalog</a> for the complete Incomplete Grade Policy. -->
+  <br/><br/>
+
+  <span class="anchor" id="policies"></span>
+  <h1>Course Policies</h1>
+  <h2>Honor Code</h2>
+   Students are expected to be familiar with and adhere to the official <a href="https://www.mtsu.edu/policies/academic-affairs-students/312.php"> Academic Misconduct Policy </a>.
+  <br/> </br>
+
+  <!-- <h2>COVID-19</h2>
+  <b>Attendance:</b> Students should not attend an on-ground, in-person class if they are
+  ill, have any symptoms listed in the Pre-Class COVID-19 Self-Assessment, have
+  tested positive for COVID-19, or have been in close contact with others who have
+  tested positive. If they have tested positive or have been in close contact with
+  someone who has, they should self-quarantine. Students are expected to keep
+  their instructors informed regarding their status when they are absent from class
+  and act with good faith and honesty when determining whether or not they
+  attend class. For more information, see
+  <a href="https://www.mtsu.edu/policies/academic-affairs-students/311-A.php">https://www.mtsu.edu/policies/academic-affairs-students/311-A.php</a> and your
+  instructor’s syllabus.<br/>
+  <b>Masking:</b> All students, faculty, and staff must be masked and observe appropriate
+  six-foot minimum social distancing while on campus. Masks are defined as
+  disposable single-use paper masks, cloth face coverings with ear loops or ties,
+  balaclavas, gaiters, and bandanas that cover the nose and mouth. Students who
+  cannot wear a mask for medical reasons must have a written accommodation
+  from the Disability and Access Center (<a href="https://www.mtsu.edu/dac/index.php">https://www.mtsu.edu/dac/index.php</a>).<br/>
+  For additional guidance on MTSU rules, facilities, and schedules, see
+  <a href="https://www.mtsu.edu/coronavirus/index.php">https://www.mtsu.edu/coronavirus/index.php</a>.<br/>
+  <br/> -->
+
+  <h2>Financial Aid Notice</h2>
+  Students receiving any form of financial aid should always consult the Financial Aid Office before dropping a course.  For additional information, contact the Financial Aid Office (898-2830) or see <a href="http://www.mtsu.edu/financialaid">http://www.mtsu.edu/financialaid</a>.
+  <br/>
+  <br/>
+  <h3>Hope (Lottery) Scholarship Information</h3>
+  Do you have a lottery scholarship?  To retain the Tennessee Education Lottery Scholarship eligibility, you must earn a cumulative TELS GPA of 2.75 after 24 and 48 attempted hours and a cumulative TELS GPA of 3.0 thereafter.  A grade of C, D, F, FA, or I in this class may negatively impact TELS eligibility.<br/><br/>
+  If you drop this class, withdraw, or if you stop attending this class you may lose eligibility for your lottery scholarship, and you may not be able to regain eligibility at a later time.<br/><br/>
+  For additional Lottery rules, please refer to your Lottery Statement of Understanding form (<a href="http://www.mtsu.edu/financial-aid/forms/LOTFEV.pdf">http://www.mtsu.edu/financial-aid/forms/LOTFEV.pdf</a>) or contact your MT One Stop Enrollment Counselor (<a href="http://www.mtsu.edu/one-stop/counselor.php">http://www.mtsu.edu/one-stop/counselor.php</a>).<br/><br/>
+  The MT One Stop is located in Room 210 of the Student Services & Admissions Center (SSAC).  If you have additional questions about financial aid, registration, tuition and billing and transcripts, please contact your <a href="http://mtsu.edu/one-stop/counselor.php">MT One Stop Enrollment Counselor</a> or come by the MT One Stop.
+  <br/><br/>
+  <h2>Reporting of Unofficial Withdrawals</h2>
+  Federal regulations require that students who cease class attendance but do not officially withdraw from the University must be reported so that future financial aid will cease and/or the student will be required to return funds. Therefore, during the term I will be required to complete a roster indicating those students who have stopped attending class without officially withdrawing. Faculty members are not required to check attendance each day; however, I may use project submission deadlines, exams, quizzes, advising appointments, or other methods I choose to determine unofficial withdraws.
+  <br/><br/>
+  <h2>Reasonable Accommodation for Students with Disabilities</h2>
+  Middle Tennessee State University is committed to campus access in accordance with Title II of the Americans with Disabilities Act and Section 504 of the Vocational Rehabilitation Act of 1973. Any student interested in reasonable accommodations can consult the <a href="https://www.mtsu.edu/dac/">Disability & Access Center (DAC) website</a> and/or contact the DAC for assistance at 615-898-2783 or DAC Email: <a href="mailto:dacemail@mtsu.edu">dacemail@mtsu.edu</a>.
+  <br/><br/>
+  <h2>Title IX Information and Resources</h2>
+  Students who believe they have been harassed, discriminated against or been the victim of sexual assault, dating violence, domestic violence or stalking should contact a Title IX/Deputy Coordinator at 615-898- 2185 or 615-898-2750 for assistance or review <a href="http://www.mtsu.edu/titleix/">MTSU’s Title IX website</a> for resources.<br/>
+  MTSU faculty are concerned about the well-being and development of our students and are legally obligated to share reports of sexual assault, dating violence, domestic violence and stalking with the University's Title IX coordinator to help ensure student's safety and welfare. Please refer to MTSU's Title IX site for contact information and details: <a href="http://www.mtsu.edu/titleix/">http://www.mtsu.edu/titleix/</a>
+  <br/><br/>
+  <h2>Accreditation Activities</h2>
+  Samples of graded work may be collected for our accreditation team. Identifying information will be removed from any such work collected.
+  <br/><br/>
+  <!-- Note: This syllabus is tentative and is subject to change.<br/> -->
+</div>
+
+</body>
+</html>
