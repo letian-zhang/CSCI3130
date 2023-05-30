@@ -1,0 +1,186 @@
+<!--
+    Example portfolio website using HTML, CSS and JavaScript.
+    By: Vili (https://vili.dev)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--     <link rel="stylesheet" href="css/style.css"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <style>
+   .jumbotron{
+    background-image: url('./img/bannerblack.jpg');
+    background-size: cover;
+    height: 100%;}
+    </style>
+    <title>CSCI3130</title>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">CSCI3130</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-Label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Course Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  aria-current="page" href="index.html">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="syllabus.html">Syllabus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="assignments.html">Assignments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="materials.html">Materials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  aria-current="page" href="labs.html">Labs</a>
+        </li>
+
+
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-Label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+<div class="container"> </br>
+    <div class="row justify-content-center">
+
+        <div class="col-sm-6" style="color:SeaShell">
+        </br>
+
+          <h2>CSCI3130: Course Materials</h2>
+        </br>
+        </div>
+      </br>
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="content"></br>
+  <span class="anchor" id="materials"></span>
+	<h1>Materials</h1>
+  <h3>RSC</h3>
+  <div class="list-group">
+    <a class="list-group-item" href="RSC_Microcode_32-bit.pdf">RSC Microcode</a>
+    <a class="list-group-item" href="RSC-Emulator.zip">RSC Emulator (Java-based)</a>
+    <a class="list-group-item" href="lab/rsem/">RSC Emulator (Browser-based - ALPHA Version)</a>
+    <a class="list-group-item" href="https://github.com/amsainju/pythonRSC/tree/master">RSC Emulator (Python-based)</a>
+  </div>
+<br/>
+	<h3>Course Reference</h3>
+	<div class="list-group">
+		  <a class="list-group-item" href="https://jupyterhub.cs.mtsu.edu/azuread/">JupyterHub on Azuread</a>
+		  <a class="list-group-item" href="http://csapp.cs.cmu.edu/2e/docs/gdbnotes-x86-64.pdf">Debugger: GDB Cheat Sheet</a>
+		  <a class="list-group-item" href="https://sourceware.org/binutils/docs/as/">AS: Documentation</a>
+
+	</div>
+	 <span class="anchor" id="studyguides"></span>
+	<h3>Study Guides</h3>
+    <div class="list-group">
+      <a class="list-group-item" href="BooleanIdentities.pdf">Boolean Identities</a>
+      <a class="list-group-item" href="CSCI3130_Exam_1_Study_Guide.pdf">Exam 1 Study Guide</a>
+        <a class="list-group-item" href="CSCI3130_Exam_2_Study_Guide.pdf">Exam 2 Study Guide</a>
+        <a class="list-group-item" href="CSCI3130_Exam_2_Study_Guide_Solution.pdf">Exam 2 Study Guide Solution</a>
+       <!--<a class="list-group-item" href="private/CSCI3130_Exam_3_Study_Guide.pdf">Exam 3 Study Guide</a> -->
+    </div>
+    <br/>
+	<h3>Example Codes</h3>
+	<div class="list-group">
+	  <div class="list-group-item">
+	    <b>Hello world example - refer to Lecture 1</b>
+	    <a class="list-group-item" href="hello_world.asm">hello_world.asm - Print a string (using an OS system call)</a>
+	  </div>
+<br/>
+<div class="list-group-item">
+	    <b>Function call examples - refer to Lecture 2</b>
+      <!-- <a class="list-group-item" href="https://mtmailmtsu-my.sharepoint.com/:u:/g/personal/asainju_mtsu_edu/EYX3ie7ljwtPq9-054_rWiUB5eB1tK-ND0tHAvXrdI_o5g?e=3VZZcb">Lecture 2 Codes</a> -->
+
+	    <a class="list-group-item" href="myfunction.asm">myfunction.asm - x86_64 function</a>
+	    <a class="list-group-item" href="call_myfunction.c">call_myfunction.c - C main function</a>
+	    <a class="list-group-item" href="myfunction.c">myfunction.c - C function</a>
+	    <a class="list-group-item" href="myfunction.cpp">myfunction.cpp - C++ function</a>
+	    <a class="list-group-item" href="call_myfunction.asm">call_myfunction.asm - x86_64 main function</a>
+	    <a class="list-group-item" href="myfunction2.asm">myfunction2.asm - x86_64 function (with arguments)</a>
+	    <a class="list-group-item" href="call_myfunction2.c">call_myfunction2.c - C main (passes arguments)</a>
+	    <a class="list-group-item" href="myfunction2.c">myfunction2.c - C function (with arguments)</a>
+	    <a class="list-group-item" href="call_myfunction2.asm">call_myfunction2.asm - x86_64 main (passes arguments)</a>
+	  </div>
+    <br/>
+	  <div class="list-group-item">
+	    <b>Computation and control instructions - refer to Lecture 3</b>
+      <a class="list-group-item" href="lecture3.asm">lecture3.asm- using printf</a>
+      <a class="list-group-item" href="square.asm">square.asm- square each element of an array</a>
+      <a class="list-group-item" href="greeting.asm">greeting.asm- calling sys_read</a>
+	    <a class="list-group-item" href="printing.asm">printing.asm - Calling printf() from assembly</a>
+	    <a class="list-group-item" href="loop.asm">loop.asm - A basic loop illustrated using multiplication</a>
+	    <a class="list-group-item" href="longlong_arithmetic.asm">longlong_arithmetic.asm - Arithmetic operations on 64-bit integers</a>
+	    <a class="list-group-item" href="double_arithmetic.asm">double_arithmetic.asm - Arithmetic operations on 64-bit floating point numbers</a>
+	    <a class="list-group-item" href="addressing.asm">addressing.asm - A basic illustration of pointer arithmetic</a>
+	    <a class="list-group-item" href="logic.asm">logic.asm - Logic operations on 64-bit values</a>
+	    <a class="list-group-item" href="encoding.asm">encoding.asm - A basic illustration of data type encodings</a>
+	  </div>
+    <br/>
+	  <!--<div class="list-group-item">
+	    RSC example codes - refer to the RSC Microcode and Lecture 15
+	    <a class="list-group-item" href="private/SimpleMultiply.asm">SimpleMultiply.asm - A basic loop and and simple multiplication algorithm</a>
+	  </div> -->
+	</div>
+	<h3>(Tiny) C-Reference</h3>
+	<div class="list-group">
+	  <a class="list-group-item" href="http://www.cplusplus.com/reference/cstdio/puts/">puts()</a>
+	  <a class="list-group-item" href="http://www.cplusplus.com/reference/cstdio/printf/">printf()</a>
+	  <a class="list-group-item" href="http://www.cplusplus.com/reference/cstring/strlen/">strlen()</a></li>
+	</div>
+  <br/>
+	<h3>ISA Reference</h3>
+	<div class="list-group">
+	  <a class="list-group-item" href="private/Intel-64-ia-32-1.pdf">Intel x86_64/IA32 Part 1</a>
+	  <a class="list-group-item" href="private/Intel-64-ia-32-2.pdf">Intel x86_64/IA32 Part 2</a>
+	  <a class="list-group-item" href="private/Intel-64-ia-32-3.pdf">Intel x86_64/IA32 Part 3</a>
+	  <a class="list-group-item" href="private/AMD64-1.pdf">AMD64 Part 1</a>
+	  <a class="list-group-item" href="private/AMD64-2.pdf">AMD64 Part 2</a>
+	  <a class="list-group-item" href="private/AMD64-3.pdf">AMD64 Part 3</a>
+	  <a class="list-group-item" href="private/abi.pdf"><!-- <a href="http://www.x86-64.org/documentation/abi.pdf"> -->ABI (Application Binary Interface) - useful summary of calling procedures</a>
+	  <!-- <a class="list-group-item" href="private/RSC_Microcode_32-bit.pdf">RSC Microcode</a>
+	  <a class="list-group-item" href="private/RSC-Emulator.zip">RSC Emulator (Java-based)</a>
+	  <a class="list-group-item" href="lab/rsem/">RSC Emulator (Browser-based - ALPHA Version)</a> -->
+	</div>
+<br/>
+	<!-- <h3>Example Circuits</h3>
+	<b>Might need to use "right-click, Save Link As... (or equivalent)" due to the file format...</b>
+	<div class="list-group">
+	  <a class="list-group-item" href="private/combinational.circ">Combinational Circuits</a>
+	  <a class="list-group-item" href="private/sequential.circ">Sequential Circuits</a>
+	  <a class="list-group-item" href="private/buses.circ">Bus Circuits</a>
+	  <a class="list-group-item" href="private/memory.circ">Memory Circuits</a>
+	  <a class="list-group-item" href="private/rtl.circ">Register Transfer Language (RTL) Circuits</a>
+	</div> -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
